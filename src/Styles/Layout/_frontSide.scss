@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 90%;
+  margin-top: 1rem;
+  background-color: $color-primary;
+  color: $color-secondary;
+  border-radius: $br;
+}
+
+.city {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.main-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  .time-item {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.7rem;
+  }
+  .temp-item {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 2.2rem;
+  }
+  .icon {
+    position: absolute;
+    left: calc(50% - 90px);
+    top: 30px;
+  }
+}
+
+.date-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 200px;
+  .date-item {
+    font-family: "Muli", sans-serif;
+    font-size: 1.2rem;
+  }
+}
+
+.info-container {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
+  .info-item {
+    font-size: 1.5rem;
+    span {
+      font-size: 1rem;
+    }
+  }
+}

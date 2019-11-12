@@ -1,0 +1,28 @@
+.backSide-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cities-list {
+  margin-top: 20px;
+  .list-item {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+}
+
+.selected {
+  background-color: $color-secondary;
+  color: $color-accent;
+  width: 200px;
+  border-radius: $br;
+  padding: 5px 20px;
+  ::after {
+    content: "";
+    border: 1px solid black;
+    padding: 20px;
+  }
+}
+

@@ -1,25 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import FrontSide from "./Components/FrontSide";
+import BackSide from "./Components/BackSide/BackSide";
+import "./Styles/styles.scss"
+import cities from "./cities.json";
 
 function App() {
+  const [flipped, setFlipped] = useState(false);
+
+  const [currentCity, setCurrentCity] = useState(cities[0]);
+
+  const onFlip = () => {
+    setFlipped(!flipped);
+  };
+
+  const onSelectCity = city => {
+    setCurrentCity(city);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={`panel ${flipped ? "flip" : ""}`}>
+        <div className="panel-front">
+          <FrontSide onClick={onFlip} currentCity={currentCity} />
+        </div>
+        <div className="panel-back">
+          {" "}
+          <BackSide
+            onClick={onFlip}
+            currentCity={currentCity}
+            cities={cities}
+            onSelect={onSelectCity}
+          />{" "}
+        </div>
+      </div>
+    </>
   );
 }
 
