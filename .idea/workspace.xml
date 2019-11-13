@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2654df34-259f-4adb-bb81-bc09373724a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/BackSide/BackSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/BackSide/BackSide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FrontSide/FrontSideView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontSide/FrontSideView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontSide/WeatherIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontSide/WeatherIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FrontSide/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FrontSide/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/Config/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Config/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/Config/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Config/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/Elements/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Elements/_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/Layout/_backSide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Layout/_backSide.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Styles/Layout/_frontSide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Layout/_frontSide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/Layout/_panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/Layout/_panel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cities.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +85,8 @@
       <updated>1573549895165</updated>
       <workItem from="1573549897651" duration="14402000" />
       <workItem from="1573593925540" duration="314000" />
-      <workItem from="1573635356575" duration="1305000" />
+      <workItem from="1573635356575" duration="1347000" />
+      <workItem from="1573642347067" duration="5500000" />
     </task>
     <servers />
   </component>

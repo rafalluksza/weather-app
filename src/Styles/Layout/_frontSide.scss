@@ -1,33 +1,95 @@
-.container {
+//.container {
+//  height: 100%;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  justify-content: center;
+//  border-radius: 8px;
+//  font-family: "Saira Condensed", sans-serif;
+//  background: linear-gradient(
+//    to top,
+//    rgba(241, 231, 103, 1) 0%,
+//    rgba(254, 182, 69, 1) 100%
+//  );
+//}
+
+.card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
   border-radius: 8px;
-  font-family: "Cabin", sans-serif;
+  height: 100%;
+  padding: 5px 15px;
+  color: white;
+  font-family: "Saira Condensed", sans-serif;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  width: 90%;
-  margin-top: 1rem;
-  background-color: $color-primary;
-  border-radius: $br;
+.card.is-clear-day {
+  background: linear-gradient(160deg, rgba(247,183,51,1) 0%, rgba(252,74,26,1) 100%);
 }
+
+.card.is-clear-night {
+  background: linear-gradient(18deg, rgba(182,136,252,1) 0%, rgba(73,43,176,1) 100%);
+}
+
+.card.is-rain {
+  background: linear-gradient(18deg, rgba(0,110,213,1) 0%, rgba(162,171,177,1) 74%);
+}
+
+.card.is-sleet {
+  background: linear-gradient(18deg, rgba(0,110,213,1) 0%, rgba(162,171,177,1) 74%);
+}
+
+.card.is-snow {
+  background: linear-gradient(18deg, rgba(0,175,245,1) 0%, rgba(0,223,247,1) 74%);
+}
+
+.card.is-fog {
+  background: linear-gradient(18deg, rgba(148,190,195,1) 0%, rgba(135,192,228,1) 74%);
+}
+
+.card.is-cloudy {
+  background: linear-gradient(18deg, rgba(63,174,187,1) 0%, rgba(0,157,255,1) 100%);
+}
+
+.card.is-partly-cloudy-day {
+  background: linear-gradient(18deg, rgba(0,190,254,1) 17%, rgba(255,190,0,1) 100%);
+}
+
+.card.is-partly-cloudy-night {
+  background: linear-gradient(18deg, rgba(121,0,254,1) 17%, rgba(136,203,251,1) 100%);
+}
+
+.card.is-default {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+//.header {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  height: 50px;
+//  width: 90%;
+//}
 
 .city {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 2rem;
-  margin-left: 10px;
-  color: $color-text;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.card-line {
+  width: 100%;
+  border-bottom: 3.5px solid #fff;
 }
 
 .main-container {
+  font-family: "Saira Condensed", sans-serif;
   position: relative;
-  height: 200px;
+  height: 230px;
   width: 100%;
   .time-item {
     position: absolute;
@@ -37,12 +99,13 @@
   }
   .temp-item {
     position: absolute;
-    left: 20px;
-    top: 20px;
-    font-size: 2.2rem;
+    left: 15px;
+    top: 15px;
+    font-size: 3rem;
   }
   .icon {
     position: absolute;
+    width: 180px;
     left: calc(50% - 90px);
     top: 30px;
   }
@@ -55,7 +118,7 @@
   padding: 20px;
   width: 250px;
   .date-item {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
   }
 }
@@ -70,6 +133,34 @@
     font-size: 1.5rem;
     span {
       font-size: 1rem;
+    }
+  }
+}
+
+.nextDay-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  .nextDay-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    .item-temperature {
+      font-size: 1.5rem;
+      width: 50px;
+    }
+    .item-date {
+      text-align: center;
+      width: 100px;
+
+    }
+    .item-icon {
+      width: 30px;
+      text-align: left;
     }
   }
 }

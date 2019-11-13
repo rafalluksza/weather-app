@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Playfair+Display:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Saira+Condensed&display=swap');
 
 
 html {
   font-size: 16px;
+  font-family: "Saira Condensed", sans-serif;
 }
 
 
 body {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
+  font-family: "Saira Condensed", sans-serif;
 }
 
 h1 {
-  font-family: "Playfair Display", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
 }

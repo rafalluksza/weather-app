@@ -1,18 +1,18 @@
 [
   {
-    "title":"Stockholm",
+    "title":"Gorzów Wlkp.",
     "location_type":"City",
-    "woeid":906057,
-    "latt_long":"59.332169,18.062429"
+    "id":1,
+    "latt_long":"52.732201,15.237570"
   },
-  {"title":"St Petersburg",
+  {"title":"Warsaw",
     "location_type":"City",
-    "woeid":2123260,
-    "latt_long":"59.932739,30.306721"
+    "id":2,
+    "latt_long":"52.229675,21.012230"
   },
   {"title":"Bielsko-Biała",
     "location_type":"City",
-    "woeid":2123262,
+    "id":3,
     "latt_long":"49.807621,19.055840"
   }
 ]

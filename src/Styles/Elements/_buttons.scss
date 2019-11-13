@@ -1,8 +1,11 @@
 .btn {
-  font-size: 1.7rem;
-  color: $color-secondary;
+  font-size: 2rem;
+  color: white;
   background-color: transparent;
   border: none;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
 }
 
 .backBtn {
@@ -12,4 +15,7 @@
   background-color: $color-primary;
   color: $color-text;
   border-radius: $br;
+  border-style: none;
+  position: absolute;
+  bottom: 30px;
 }

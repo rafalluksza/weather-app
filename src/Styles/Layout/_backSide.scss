@@ -1,4 +1,10 @@
 .backSide-container {
+  height: 100%;
+  background: linear-gradient(to top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  border-radius: $br;
+}
+
+.backSide-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,9 +24,9 @@
 }
 
 .selected {
-  background-color: $color-secondary;
-  color: $color-text;
+  color: black;
   width: 200px;
+  border: 4px solid black;
   border-radius: $br;
   padding: 5px 20px;
   text-align: center;
