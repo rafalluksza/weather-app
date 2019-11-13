@@ -43,7 +43,6 @@ const FrontSideView = ({
       </div>
       <div className="date-container">
         <div className="date-item">{date.format("dddd")}</div>
-        <div className="date-item">{date.format("MMM Do")}</div>
       </div>
     </div>
   );

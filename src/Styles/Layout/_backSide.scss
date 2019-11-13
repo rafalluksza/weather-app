@@ -7,6 +7,10 @@
 
 .cities-list {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   .list-item {
     font-size: 2rem;
     margin: 10px 0;
@@ -15,10 +19,11 @@
 
 .selected {
   background-color: $color-secondary;
-  color: $color-accent;
+  color: $color-text;
   width: 200px;
   border-radius: $br;
   padding: 5px 20px;
+  text-align: center;
   ::after {
     content: "";
     border: 1px solid black;

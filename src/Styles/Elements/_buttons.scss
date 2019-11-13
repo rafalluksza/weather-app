@@ -1,6 +1,8 @@
 .btn {
   font-size: 1.7rem;
   color: $color-secondary;
+  background-color: transparent;
+  border: none;
 }
 
 .backBtn {
@@ -8,6 +10,6 @@
   height: 40px;
   font-size: 1.5rem;
   background-color: $color-primary;
-  color: $color-background;
+  color: $color-text;
   border-radius: $br;
 }
