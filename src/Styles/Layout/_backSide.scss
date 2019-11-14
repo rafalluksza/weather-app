@@ -1,6 +1,10 @@
 .backSide-container {
   height: 100%;
-  background: linear-gradient(to top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  );
   border-radius: $br;
 }
 
@@ -37,3 +41,35 @@
   }
 }
 
+.form-container {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+}
+
+.form {
+  position: relative;
+  width: 180px;
+  .input {
+    width: 100%;
+    height: 30px;
+    border-radius: $br;
+    border-style: none;
+    padding: 5px 10px;
+    .input-label {
+    }
+
+    .input-border {
+    }
+  }
+  .form-btn {
+    background-color: transparent;
+    color: black;
+    border-radius: $br;
+    height: 30px;
+    border-style: none;
+    position: absolute;
+    top: 5px;
+    right: -20px;
+  }
+}

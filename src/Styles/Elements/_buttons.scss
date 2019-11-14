@@ -9,13 +9,14 @@
 }
 
 .backBtn {
-  width: 200px;
-  height: 40px;
-  font-size: 1.5rem;
-  background-color: $color-primary;
-  color: $color-text;
+  font-size: 2rem;
+  background-color: transparent;
+  color: $color-secondary;
   border-radius: $br;
   border-style: none;
   position: absolute;
-  bottom: 30px;
+  right: 5px;
+  bottom: 10px;
 }
+
+

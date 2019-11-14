@@ -1,5 +1,8 @@
 import React from "react";
 import CitiesList from "./CitiesList";
+import Search from "./Search";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWindowClose } from "@fortawesome/free-solid-svg-icons/faWindowClose";
 
 export default ({ onClick, cities, currentCity, onSelect }) => {
   return (
@@ -10,8 +13,9 @@ export default ({ onClick, cities, currentCity, onSelect }) => {
           currentCity={currentCity}
           onSelect={onSelect}
         />
+        <Search />
         <button className="backBtn" onClick={onClick}>
-          Back
+          <FontAwesomeIcon icon={faWindowClose}/>
         </button>
       </div>
     </div>

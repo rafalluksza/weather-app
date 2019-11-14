@@ -5,7 +5,7 @@ import "./Styles/styles.scss"
 import cities from "./cities.json";
 
 function App() {
-  const [flipped, setFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(true);
 
   const [currentCity, setCurrentCity] = useState(cities[0]);
 

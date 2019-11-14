@@ -7,8 +7,8 @@ const FrontSide = ({ onClick, currentCity }) => {
   const [weather, setWeather] = useState(null);
   const [daily, setDaily] = useState(null);
 
-  console.log(daily);
-  console.log(weather);
+  // console.log(daily);
+  // console.log(weather);
   useEffect(() => {
     getWeatherForLocation(currentCity)
       .then(w => {
