@@ -1,14 +1,28 @@
 import React from "react";
 import CityItem from "./CityItem";
+import { connect } from "react-redux";
 
-export default ({ cities, currentCity, onSelect }) => {
+const CitiesList = ({ cities, currentCity, onSelect }) => {
   return (
     <ul className="cities-list">
       {cities.map((city,index) => {
         return (
-          <CityItem city={city} index={index} isSelected={currentCity.title === city.title} onSelect={onSelect} />
+          <CityItem
+            key={index}
+            city={city}
+            isSelected={currentCity.title === city.title}
+            onSelect={onSelect}
+          />
         );
       })}
     </ul>
   );
 };
+
+const mapState = state => {
+  return {
+    cities: state
+  };
+};
+
+export default connect(mapState)(CitiesList);
