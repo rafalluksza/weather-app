@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons/faTrashAlt";
 import { deleteCity } from "../Redux/actions";
 
-const CityItem = ({ city, isSelected, onSelect, deleteCity }) => {
+const CityItem = ({ city, isSelected, onSelect, deleteCity,index }) => {
   // console.log()
 
   const handleSelect = () => {
@@ -12,16 +12,15 @@ const CityItem = ({ city, isSelected, onSelect, deleteCity }) => {
   };
 
   const handleDelete = (e, id) => {
-    // console.log(e, id)
     e.preventDefault();
 
-    deleteCity(id);
+    deleteCity(index);
   };
 
   return (
     <li className={`list-item ${isSelected ? "selected" : " "}`}>
       <div onClick={handleSelect}>{city.title}</div>
-      <button className="btn-del" onClick={e => handleDelete(e, city.id)}>
+      <button className="btn-del" onClick={e => handleDelete(e, index)}>
         <FontAwesomeIcon icon={faTrashAlt} />
       </button>
     </li>

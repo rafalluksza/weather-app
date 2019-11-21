@@ -9,6 +9,7 @@ const CitiesList = ({ cities, currentCity, onSelect }) => {
         return (
           <CityItem
             key={index}
+            index={index}
             city={city}
             isSelected={currentCity.title === city.title}
             onSelect={onSelect}
