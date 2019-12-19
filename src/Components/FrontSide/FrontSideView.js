@@ -20,7 +20,7 @@ const FrontSideView = ({
       </div>
       <div className="card-line" />
       <div className="main-container">
-        <div className="time-item"> {date.format("h:mm")}</div>
+        <div className="time-item"> {date.format("HH:MM")}</div>
         <div className="temp-item">
           {`${Number(temperature).toFixed(0)}`}&deg;
         </div>

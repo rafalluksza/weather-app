@@ -5,7 +5,9 @@
     rgba(241, 231, 103, 1) 0%,
     rgba(254, 182, 69, 1) 100%
   );
-  border-radius: $br;
+  @media (min-width: 600px) {
+    border-radius: $br;
+  }
 }
 
 .backSide-content {
